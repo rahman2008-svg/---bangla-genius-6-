@@ -1,0 +1,6 @@
+{
+  "name": "বাংলা জিনিয়াস (Bangla Genius)",
+  "description": "বাংলা ভাষা ও ব্যাকরণ শেখার সম্পূর্ণ অফলাইন প্ল্যাটফর্ম",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

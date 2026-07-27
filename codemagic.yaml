@@ -1,0 +1,23 @@
+workflows:
+  android-debug:
+    name: Bangla Genius 6
+
+    max_build_duration: 120
+
+    environment:
+      java: 17
+
+    cache:
+      cache_paths:
+        - ~/.gradle/caches
+        - ~/.gradle/wrapper
+
+    scripts:
+      - chmod +x gradlew
+      - echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+      - ./gradlew clean
+      - ./gradlew assembleDebug --stacktrace
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+      - app/build/reports/**/*
